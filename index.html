@@ -1,0 +1,9 @@
+<form method="get" action="http://www.google.com/search">
+<img src="res/google.gif"><input type="text"   name="q" size="31" maxlength="255" value="" />
+<input type="submit" value="search">
+</form>
+  
+{% for bookmark in bookmarks %}
+<a href="{{bookmark.url}}"><img class="bm" src="/icon?bmid={{bookmark.key}}" alt="{{bookmark.title}}" /></a>
+{% endfor %}
+<a href="/add"><img class="bm" src="/res/add.png" alt="add" /></a>

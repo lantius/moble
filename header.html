@@ -1,0 +1,10 @@
+<html><head><title>moble</title>
+<link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head><body>
+<span id="login">
+<a href="/settings">Settings</a>
+<a href="{{ linkto }}">{{ linktext }}</a>
+{% if logout_url %}
+<a href="{{ logout_url }}">Logout</a>
+{% endif %}
+</span>
